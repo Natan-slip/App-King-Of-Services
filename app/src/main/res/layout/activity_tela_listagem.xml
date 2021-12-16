@@ -125,7 +125,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/foto_usuario" />
+            app:srcCompat="@drawable/photo_ti" />
 
         <TextView
             android:id="@+id/tv_nome"
@@ -133,9 +133,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Fulano de Tal"
+            android:text="Andre dos Santos"
             android:textColor="#000000"
-            android:textSize="16sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toEndOf="@+id/iv_perfil"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -168,12 +168,14 @@
             android:id="@+id/tv_descricao"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="4dp"
             android:lineSpacingExtra="8sp"
-            android:text="Descrição: Meu nome é fulano de Tal, trabalho nessa área a 30 anos."
+            android:text="Descrição: Trabalho a mais de 5 anos na área de manutenção de notebooks e periféricos no geral."
             android:textAlignment="viewStart"
             android:textColor="#000000"
             android:textSize="11sp"
-            app:layout_constraintStart_toStartOf="@+id/avaliacao"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/avaliacao" />
 
         <View
@@ -192,9 +194,9 @@
             android:id="@+id/btn_ver_perfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="12dp"
             android:background="#FF7A00"
             android:backgroundTint="#FF7A00"
             android:drawableEnd="@drawable/avancar"

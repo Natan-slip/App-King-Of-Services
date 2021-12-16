@@ -44,8 +44,8 @@ class TelaVerPerfilPrestador : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun TelaPerfilPrestador() {
-        val intent = Intent( this, TelaVerPerfilPrestador::class.java)
+    private fun TelaPerfilCliente() {
+        val intent = Intent( this, TelaPerfilCliente::class.java)
         startActivity(intent)
     }
 
@@ -58,7 +58,7 @@ class TelaVerPerfilPrestador : AppCompatActivity() {
 
         when (item.itemId) {
             R.id.profile -> {
-                TelaPerfilPrestador()
+                TelaPerfilCliente()
                 return true
             }
 

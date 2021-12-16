@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/tv_descricao_ver_perfil"
-            android:layout_width="237dp"
+            android:layout_width="210dp"
             android:layout_height="83dp"
             android:layout_marginTop="36dp"
             android:layout_marginEnd="16dp"
@@ -45,7 +45,9 @@
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/card_view_profile"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card_view_profile"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView

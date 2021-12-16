@@ -68,6 +68,11 @@ class TelaProcesso : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun TelaPerfilCliente() {
+        val intent = Intent( this, TelaPerfilCliente::class.java)
+        startActivity(intent)
+    }
+
     private fun TelaBusca() {
         val intent = Intent(this, TelaListagem::class.java)
         startActivity(intent)
@@ -82,7 +87,7 @@ class TelaProcesso : AppCompatActivity() {
 
         when (item.itemId) {
             R.id.profile -> {
-                TelaVerPerfilPrestador()
+                TelaPerfilCliente()
                 return true
             }
 
