@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeusServicos">
+
+    <Button
+        android:id="@+id/btn_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Pedido"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btn_em_andamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Em andamento"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pedidos"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btn_concluido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Concluido"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_em_andamento"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

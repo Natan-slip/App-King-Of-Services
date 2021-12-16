@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaPerfilCliente">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user_cliente"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_profile" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_nome_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Fulano de Tal"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/cv_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/cv_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_separador_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_nome_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/tv_nome_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_idade_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="18 anos"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_separador_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/tv_separador_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_criacao_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="conta criada: 17/11/2021"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_nome_user_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome_user_cliente" />
+
+    <View
+        android:id="@+id/view_separador"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_criacao_user_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/tv_criacao_user_cliente" />
+
+    <Button
+        android:id="@+id/btn_editar_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto"
+        android:backgroundTint="#FFFFFF"
+        android:text="Editar Perfil"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/view_separador"
+        app:layout_constraintTop_toBottomOf="@+id/view_separador"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/tv_nome_user_cliente_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="Nome:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_nome_user_cliente_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Fulano de Tal"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_nome_user_cliente_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_nome_user_cliente_2" />
+
+    <TextView
+        android:id="@+id/tv_cpf_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="CPF:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cpf_user_cliente_2"
+        app:layout_constraintTop_toTopOf="@+id/tv_nome_user_cliente_3" />
+
+    <TextView
+        android:id="@+id/tv_cpf_user_cliente_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="000.000.000 - 00"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_editar_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/tv_cpf_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_email_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_nome_user_cliente_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome_user_cliente_2" />
+
+    <TextView
+        android:id="@+id/tv_email_user_cliente_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="fulanodetal@email.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_email_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/tv_email_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_telefone_user_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Telefone:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_cpf_user_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cpf_user_cliente" />
+
+    <TextView
+        android:id="@+id/tv_telefone_user_cliente_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="0000-0000"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_telefone_user_cliente"
+        app:layout_constraintTop_toTopOf="@+id/tv_telefone_user_cliente" />
+
+    <Button
+        android:id="@+id/btn_sua_localizacao_user_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Sua Localização"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_user_cliente"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btn_ver_historico_servicos_user_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Ver histórico de serviços prestados"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sua_localizacao_user_cliente"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btn_ver_historico_pagamentos_user_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Ver histórico de recibo"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_historico_servicos_user_cliente"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btn_forma_pagamento_user_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="Formas de pagamento"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ver_historico_pagamentos_user_cliente"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TelaModalTipoServico">
+
+        <TextView
+            android:id="@+id/tv_tipo_servico_precisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Que tipo de serviço você precisa?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_separador"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tipo_servico_precisa" />
+
+        <TextView
+            android:id="@+id/tv_servico_procura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Qual serviço você procura?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_separador" />
+
+        <EditText
+            android:id="@+id/et_servico_procura"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_servico_procura" />
+
+        <TextView
+            android:id="@+id/tv_local_onde_sera_feito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Onde será feito o serviço?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_servico_procura" />
+
+        <EditText
+            android:id="@+id/et_local_onde_sera_feito"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_local_onde_sera_feito" />
+
+        <TextView
+            android:id="@+id/tv_conhecimneto_necessario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Qual conhecimento é necessário?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_local_onde_sera_feito" />
+
+        <EditText
+            android:id="@+id/et_conhecimneto_necessario"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_conhecimneto_necessario" />
+
+        <TextView
+            android:id="@+id/tv_servico_online_presencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="O serviço será online ou presencial?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_conhecimneto_necessario" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_tipoServico"
+            android:layout_width="333dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_servico_online_presencial">
+
+            <RadioButton
+                android:id="@+id/radio_online"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/colorPrimary"
+                android:text="Online" />
+
+            <RadioButton
+                android:id="@+id/radio_presencial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/colorPrimary"
+                android:text="Presencial" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_descricao_do_que_precisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="Descrição do que precisa"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup_tipoServico" />
+
+        <EditText
+            android:id="@+id/et_descricao_do_que_precisa"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/edit_text_login_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_descricao_do_que_precisa"/>
+
+        <Button
+            android:id="@+id/btn_enviarModal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Enviar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_descricao_do_que_precisa" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaTipoUsuario">
+
+    <TextView
+        android:id="@+id/tv_tipoUsuarioCor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="tipo de usuário"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tipoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Selecione seu "
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tipoUsuarioCor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_cliente"
+        android:layout_width="135dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/clientes"
+        app:layout_constraintEnd_toStartOf="@+id/iv_prestador"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipoUsuario" />
+
+    <Button
+        android:id="@+id/btt_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btt_prestador"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_cliente"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <ImageView
+        android:id="@+id/iv_prestador"
+        android:layout_width="144dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/empregado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipoUsuario" />
+
+    <Button
+        android:id="@+id/btt_prestador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Prestador"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_prestador"
+        app:layout_constraintVertical_bias="0.108" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:padding="20dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPendente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#EAEAEA"
+        app:cardCornerRadius="19dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_listagem"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/iv_perfil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/avaliacao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/photo_mari" />
+
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Maria da Silva"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/iv_perfil"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_descricao"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="45dp"
+                android:lineSpacingExtra="8sp"
+                android:text="Descrição: Meu nome é Maria da Silva, preciso de um serviço de manutenção para a minha geladeira."
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.888"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nome"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btn_ver_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FF7A00"
+                android:backgroundTint="#FF7A00"
+                android:drawableEnd="@drawable/avancar"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:text="Aceitar"
+                android:textSize="11sp"
+                app:cornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.826"
+                app:layout_constraintStart_toEndOf="@+id/tv_nome"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

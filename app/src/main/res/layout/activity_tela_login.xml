@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaLogin">
+
+    <TextView
+        android:id="@+id/tv_fazerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Fazer Login"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mensagem_erro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@id/tv_fazerLogin"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_emailLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="E-mail"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fazerLogin" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_login_background"
+        android:drawableStart="@drawable/email_24"
+        android:drawablePadding="12dp"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emailLogin" />
+
+    <TextView
+        android:id="@+id/tv_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Senha"
+        android:textSize="19dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_senha"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_login_background"
+        android:drawableStart="@drawable/lock_24"
+        android:drawablePadding="12dp"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_senha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/check_lembrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="Lembrar"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_senha"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_crie_sua_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_esqueceu_senha"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:text="Crie sua conta"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_lembrar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_esqueceu_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check_lembrar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
+        android:text="Esqueceu a senha?"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_crie_sua_conta"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btt_fazerLogin"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_login_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_esqueceu_senha"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Login pelo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_senha" />
+
+    <TextView
+        android:id="@+id/tv_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Login pelo"
+        app:layout_constraintBottom_toTopOf="@+id/btt_fazerLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_google"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/tv_facebook2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="80dp"
+        android:text="Facebook"
+        android:textColor="#00A6FF"
+        app:layout_constraintBottom_toTopOf="@+id/btt_fazerLogin"
+        app:layout_constraintEnd_toStartOf="@+id/tv_crie_sua_conta"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/tv_facebook" />
+
+    <TextView
+        android:id="@+id/tv_google2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Google"
+        android:textColor="#00A6FF"
+        app:layout_constraintEnd_toStartOf="@+id/check_lembrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_google"
+        app:layout_constraintTop_toBottomOf="@+id/et_senha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

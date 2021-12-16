@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaFeed">
+
+    <!-- Os Cards e Imagnes -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Categorias mais pesquisadas"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador2"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="76dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/iv_prestador2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_manuntecao" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador5"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="68dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_prestador2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/card_view_prestador2"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador2">
+
+        <ImageView
+            android:id="@+id/iv_prestador5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_limpeza"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="Manunteção"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toEndOf="@+id/tv_titlePrestador2"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador3" />
+
+    <TextView
+        android:id="@+id/tv_titlePrestador6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="Mecânico"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/tv_titlePrestador5"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador6" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador3"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toEndOf="@+id/card_view_prestador2"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/iv_prestador3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_tecnico"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pedreiro"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_prestador8"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/card_view_prestador8"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador8" />
+
+    <TextView
+        android:id="@+id/tv_titlePrestador9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
+        android:text="Limpeza"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/tv_titlePrestador8"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador9" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador8"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_prestador5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/card_view_prestador5"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador5">
+
+        <ImageView
+            android:id="@+id/iv_prestador8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_manuntecao"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="Faxineira"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_titlePrestador2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador1" />
+
+    <TextView
+        android:id="@+id/tv_titlePrestador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Técnico"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_prestador2"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/card_view_prestador2"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador4"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="68dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view_prestador5"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador1">
+
+        <ImageView
+            android:id="@+id/iv_prestador4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_manuntecao"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador6"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="27dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toEndOf="@+id/card_view_prestador5"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador3">
+
+        <ImageView
+            android:id="@+id/iv_prestador6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_tecnico"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="Faz tudo"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_titlePrestador8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador7" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador7"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view_prestador8"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador4">
+
+        <ImageView
+            android:id="@+id/iv_prestador7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_tecnico"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador1"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="76dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view_prestador2"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/iv_prestador1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_limpeza" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        android:text="Eletrecista"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_titlePrestador5"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador4" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_prestador9"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="52dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toEndOf="@+id/card_view_prestador8"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador6">
+
+        <ImageView
+            android:id="@+id/iv_prestador9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_limpeza"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_titlePrestador5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Diarista"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_view_prestador5"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/card_view_prestador5"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_prestador5" />
+
+    <!--     Parte dos Titulos das Categorias-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
